@@ -38,7 +38,24 @@ Instead of manually parsing HTML and converting to markdown (which misses tables
 - Zero formatting edge cases
 ```
 
-## Usage
+## Installation
+
+### Option 1: UserScript (Recommended)
+
+1. Install a userscript manager for your browser:
+   - **Chrome/Edge**: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+   - **Firefox**: [Tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/) or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)
+   - **Safari**: [Tampermonkey](https://apps.apple.com/us/app/tampermonkey/id1482490089)
+
+2. Click on `claude-chat-exporter.user.js` in this repository
+
+3. Click "Raw" button to view the raw file
+
+4. Your userscript manager should automatically detect it and prompt you to install
+
+5. Once installed, a "📥 Export Chat" button will appear on all Claude.ai pages
+
+### Option 2: Browser Console
 
 1. Open your conversation with Claude in your web browser.
 2. Open the browser's developer console:
@@ -48,6 +65,14 @@ Instead of manually parsing HTML and converting to markdown (which misses tables
 3. Copy the entire script in the file `claude-chat-exporter.js` and paste it into the console.
 4. Press Enter to run the script.
 5. The script will show a progress indicator and will automatically generate and download a file named `{conversation-title}.md` (auto-generated with `conversation-title` being the Claude conversation title).
+
+## Usage
+
+### UserScript Method
+Simply click the "📥 Export Chat" button that appears in the bottom-right corner of any Claude conversation page.
+
+### Console Method
+Follow the installation steps above for Option 2.
 
 ## Complete Element Support
 
