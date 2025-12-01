@@ -213,7 +213,7 @@
     }
 
     async function waitForClipboardOperations(expectedCount) {
-      const maxWaitTime = 2000; // Maximum wait time
+      const maxWaitTime = 5000; // Maximum wait time
       const checkInterval = 100; // Check every 100ms
       let elapsed = 0;
 
